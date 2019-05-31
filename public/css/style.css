@@ -1,0 +1,186 @@
+.header{
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.1);
+}
+.page-titles{
+    margin: unset;
+    padding: 7px 10px;
+}
+tbody tr td:last-child,thead tr th:last-child{
+    text-align: left;
+}
+td,th{
+    vertical-align:middle !important;
+}
+.form-control{
+    height: unset;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+span.select2{
+    min-width: 300px;
+}
+
+span.select2-selection{
+    min-height: 35px;
+}
+
+.w-m-100{
+    width: 100px !important;
+}
+
+.input-image {
+    display: none !important;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+tbody tr.bg-timekeeping td ,tbody tr.bg-timekeeping th{
+    color: #000;
+}
+
+.text-note{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 150px;
+    white-space: nowrap;
+}
+
+.error{
+    color: red !important;
+}
+
+.max-height-search{
+    max-height: 38px;
+}
+
+/*css for loader*/
+.flower-spinner,  .flower-spinner * {
+    box-sizing: border-box;
+}
+
+.flower-spinner {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 99999;
+
+}
+.bg-op{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    opacity: .5;
+    z-index: 19999;
+    background: #ccc;
+}
+.flower-spinner .dots-container {
+    z-index: 99999;
+    height: calc(70px / 7);
+    width: calc(70px / 7);
+}
+
+.flower-spinner .smaller-dot {
+    background: #ff1d5e;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: flower-spinner-smaller-dot-animation 2.5s 0s infinite both;
+
+}
+
+.flower-spinner .bigger-dot {
+    background: #ff1d5e;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    border-radius: 50%;
+    animation: flower-spinner-bigger-dot-animation 2.5s 0s infinite both;
+}
+
+@keyframes flower-spinner-bigger-dot-animation {
+    0%, 100% {
+        box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    25%, 75% {
+        box-shadow: rgb(255, 29, 94) 26px 0px 0px,
+        rgb(255, 29, 94) -26px 0px 0px,
+        rgb(255, 29, 94) 0px 26px 0px,
+        rgb(255, 29, 94) 0px -26px 0px,
+        rgb(255, 29, 94) 19px -19px 0px,
+        rgb(255, 29, 94) 19px 19px 0px,
+        rgb(255, 29, 94) -19px -19px 0px,
+        rgb(255, 29, 94) -19px 19px 0px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px;
+    }
+}
+
+@keyframes flower-spinner-smaller-dot-animation {
+    0%, 100% {
+        box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px;
+    }
+
+    25%, 75% {
+        box-shadow: rgb(255, 29, 94) 14px 0px 0px,
+        rgb(255, 29, 94) -14px 0px 0px,
+        rgb(255, 29, 94) 0px 14px 0px,
+        rgb(255, 29, 94) 0px -14px 0px,
+        rgb(255, 29, 94) 10px -10px 0px,
+        rgb(255, 29, 94) 10px 10px 0px,
+        rgb(255, 29, 94) -10px -10px 0px,
+        rgb(255, 29, 94) -10px 10px 0px;
+    }
+
+    100% {
+        box-shadow: rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px,
+        rgb(255, 29, 94) 0px 0px 0px;
+    }
+}
+  /**/
